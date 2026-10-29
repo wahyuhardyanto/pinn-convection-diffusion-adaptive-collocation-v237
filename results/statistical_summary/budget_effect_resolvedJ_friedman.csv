@@ -1,0 +1,5 @@
+family,metric,method,n_blocks,friedman_statistic,p_raw,p_holm_across_4_methods,omnibus_gate_pass
+budget_secondary,resolved_J,mc,30,40.19999999999999,1.8650089219027786e-09,5.595026765708336e-09,True
+budget_secondary,resolved_J,lhs,30,28.46666666666664,6.584789167675125e-07,1.316957833535025e-06,True
+budget_secondary,resolved_J,rad,30,22.866666666666674,1.0828453192456171e-05,1.0828453192456171e-05,True
+budget_secondary,resolved_J,alhs,30,41.866666666666674,8.105295363086586e-10,3.242118145234634e-09,True

@@ -1,0 +1,4 @@
+family,metric,n_collocation,n_blocks,friedman_statistic,p_raw,p_holm_across_3_budgets,omnibus_gate_pass
+secondary,resolved_J,250,30,72.51999999999998,1.2317439646855914e-15,3.695231894056774e-15,True
+secondary,resolved_J,500,30,63.039999999999964,1.3167956323053897e-13,1.3167956323053897e-13,True
+secondary,resolved_J,1000,30,70.12,4.023117431694705e-15,8.04623486338941e-15,True

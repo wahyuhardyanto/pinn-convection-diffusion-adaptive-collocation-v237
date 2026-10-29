@@ -1,0 +1,4 @@
+family,metric,n_collocation,n_blocks,friedman_statistic,p_raw,p_holm_across_3_budgets,omnibus_gate_pass
+primary,space_time_rel_l2,250,30,10.079999999999984,0.017898204605179824,0.017898204605179824,True
+primary,space_time_rel_l2,500,30,22.120000000000005,6.158622693664046e-05,0.0001847586808099214,True
+primary,space_time_rel_l2,1000,30,12.879999999999995,0.00490343124839017,0.00980686249678034,True
