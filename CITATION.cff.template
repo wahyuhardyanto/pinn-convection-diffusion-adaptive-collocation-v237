@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and this software release."
+title: "V2.3.7 PINN Convection-Diffusion Four-Sampler Benchmark"
+type: software
+version: "2.3.7"
+date-released: 2026-10-22
+authors:
+  - family-names: "REPLACE_WITH_AUTHOR_FAMILY_NAME"
+    given-names: "REPLACE_WITH_AUTHOR_GIVEN_NAME"
+repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"
+# doi: "REPLACE_WITH_ZENODO_OR_SOFTWARE_DOI_WHEN_AVAILABLE"
