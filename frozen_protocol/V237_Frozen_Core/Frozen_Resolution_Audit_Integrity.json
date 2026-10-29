@@ -1,0 +1,51 @@
+{
+  "version": "1.0.1",
+  "training_runs": 0,
+  "source_checkpoints_unchanged": true,
+  "evaluated_checkpoints": 40,
+  "expected_checkpoints": 40,
+  "complete": true,
+  "missing": [],
+  "sources": [
+    {
+      "archive": "PDE_v233_pilot_results.zip",
+      "sha256": "056adfc0f3c38dc40e3530ad4b98159bf8add3e3309a37a94adafd2c80e43805"
+    },
+    {
+      "archive": "PDE_v232_ablation_results.zip",
+      "sha256": "d9bdb60abd328f00834306cbed5dd12dc63aae2a6acb4eb36603705798261785"
+    },
+    {
+      "archive": "PDE_v231_validation_results(1).zip",
+      "sha256": "9826c0dbdcd6aa4163dc2c77e216aaeda2adb7d846335d52a07d3a5afae4d20d"
+    }
+  ],
+  "cpu_runtime": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "threads": 4,
+    "dtype": "float64",
+    "float32_controls": true
+  },
+  "quadrature_orders": [
+    4,
+    6,
+    8
+  ],
+  "quadrature_n_points": {
+    "4": 39936,
+    "6": 89856,
+    "8": 159744
+  },
+  "max_last_J_relative_change": 5.55574584079066e-05,
+  "max_last_absres_relative_change": 0.00011317860665749357,
+  "max_last_right_probability_relative_change": 0.00011187243671118008,
+  "elapsed_current_session_seconds": 134.29774109300007,
+  "scope": "Selected final checkpoints only; no historical candidate-state weights or proposal history reconstructed.",
+  "proposal": "Counterfactual diagnostic density at each final model; eta=0.1, residual absolute value. Physical cell areas included.",
+  "integral": "J = integral_0^1 integral_0^1 r(x,t)^2 dx dt; no PDE/BC training weights applied.",
+  "script_sha256": "9de572e2bed0114241cc9b9e11a45e91caf4f34f124f0589e1908d920ae793f2"
+}

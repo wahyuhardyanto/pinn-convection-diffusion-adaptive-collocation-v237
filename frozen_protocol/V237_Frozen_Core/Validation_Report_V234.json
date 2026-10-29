@@ -1,0 +1,73 @@
+{
+  "package_version": "2.3.4",
+  "scope": "functional tests, not the ten publication/ablation trainings",
+  "verification": {
+    "environment": {
+      "python": "3.13.5",
+      "torch": "2.10.0+cpu",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "system": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "machine": "x86_64",
+      "device": "cpu",
+      "dtype": "float32"
+    },
+    "checks": {
+      "only_config_change_is_adapt_grid_side": true,
+      "frozen_20_baseline_and_source_hashes_match": true,
+      "graded101_geometry_matches_resolution_audit": true,
+      "zero_and_constant_residual_give_physical_uniform": true,
+      "uniform_mesh_matches_old_sample_values_and_rng_exactly": true,
+      "exponential_boundary_mass_relative_discretization_error": 0.003031600029484549,
+      "iid_band_mass_empirical": 0.56946,
+      "iid_band_mass_expected_piecewise": 0.5707335091400091,
+      "alhs_preserves_all_500_probability_strata_per_axis": true,
+      "invalid_fields_rejected": true,
+      "update_no_parameter_change_no_rng_consumption": true,
+      "hard_constraints_max_error": 8.742277657347586e-08,
+      "scoped_adapter_restored_after_exception": true
+    },
+    "integration": {
+      "adapter_old_proposal_final_weights_bitwise_equal_CPU": true,
+      "optimizer_output_and_seed_path_control_equal": true
+    },
+    "passed": true
+  },
+  "release_checks": {
+    "rad_actual_smoke_candidate_states_and_proposal_history_complete": true,
+    "alhs_actual_smoke_candidate_states_and_proposal_history_complete": true,
+    "posthoc_resume_did_not_retrain": true,
+    "ablation_environment_guard_blocks_mismatch": true,
+    "report_10_pair_fixture_only_not_scientific_results": true,
+    "python39_grammar_checked": true
+  },
+  "new_proposal_actual_smoke_runs": 2,
+  "old_proposal_adapter_control_training_runs": 2,
+  "new_full_training_runs_completed": 0,
+  "mps_torch280_training_tested_here": false,
+  "python39_syntax_validation": true,
+  "report_test_data": "Temporary explicitly labelled fixtures only; not shipped as new experiments",
+  "unmodified_training_module_hashes": {
+    "v233": "20d64e0f3f18e9a939e9dedaaa3a2101a9f7a401331262356588428d8a0d3c54",
+    "v232": "1160c8a49e003630c06730de9c086924bd4f17ac93d82fa4b60336c711160df9",
+    "v231": "d154ef2fc148aa996519558a22430888f12796df1f4a6481b8e7bc62cb17fd62",
+    "v23": "c7781f139435ff467166b8f43de3d0570f1c968be0923d99e6874de80c904783",
+    "v22": "53c200b71fe9dbc9a08a63f375fecc4bb784f4aa9bdac7897ce8e415c4fe9950",
+    "v21": "4882a3ca1bf15c4850a055213d57bf5b0adb5f5f5ac529679e3ee87228843104",
+    "v2": "46abcbbdea1e684bd7943cabaac682fac952a39c373a272ce151183e8b97403e"
+  },
+  "smoke_run_integrity": {
+    "version": "2.3.4",
+    "preset": "smoke",
+    "new_expected": 2,
+    "new_completed": 2,
+    "missing": [],
+    "complete": true,
+    "historical_rows_not_counted_as_new": true,
+    "training_protocol_unchanged_except_proposal": true,
+    "checkpoint_selection_grid_side": 11,
+    "scientific_scope": "5-seed exploratory paired proposal-resolution ablation; no inferential p-values"
+  },
+  "pending_user_validation": "Run smoke in frozen Mac environment, then ablation RAD/ALHS seeds 0-4."
+}

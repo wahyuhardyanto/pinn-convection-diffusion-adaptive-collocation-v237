@@ -1,0 +1,75 @@
+{
+  "source_results_archive": "PDE_v233_pilot_results.zip",
+  "source_archive_sha256": "056adfc0f3c38dc40e3530ad4b98159bf8add3e3309a37a94adafd2c80e43805",
+  "audit_archive": "V233_Audit_Resolusi_Checkpoint_Package.zip",
+  "audit_archive_sha256": "0158bab6ccd523b005f4182f093161c1358c339189384c0f8df888ab9a773149",
+  "unchanged_training_modules": {
+    "v233": "convection_diffusion_pilot_v233.py",
+    "v232": "convection_diffusion_ablation_v232.py",
+    "v231": "convection_diffusion_validation_v231.py",
+    "v23": "convection_diffusion_benchmark_v23.py",
+    "v22": "convection_diffusion_benchmark_v22.py",
+    "v21": "convection_diffusion_benchmark_v21.py",
+    "v2": "convection_diffusion_benchmark_v2.py"
+  },
+  "source_sha256": {
+    "v233": "20d64e0f3f18e9a939e9dedaaa3a2101a9f7a401331262356588428d8a0d3c54",
+    "v232": "1160c8a49e003630c06730de9c086924bd4f17ac93d82fa4b60336c711160df9",
+    "v231": "d154ef2fc148aa996519558a22430888f12796df1f4a6481b8e7bc62cb17fd62",
+    "v23": "c7781f139435ff467166b8f43de3d0570f1c968be0923d99e6874de80c904783",
+    "v22": "53c200b71fe9dbc9a08a63f375fecc4bb784f4aa9bdac7897ce8e415c4fe9950",
+    "v21": "4882a3ca1bf15c4850a055213d57bf5b0adb5f5f5ac529679e3ee87228843104",
+    "v2": "46abcbbdea1e684bd7943cabaac682fac952a39c373a272ce151183e8b97403e"
+  },
+  "frozen_files": {
+    "Frozen_V233_Checkpoint_Inventory.csv": "50bd2cfb3b4bfa55e55dcb5f9ca56193961531253b68211d08d95450b6b4380a",
+    "Frozen_V233_Manifest.json": "3978da55cd11fb5e66e237da7775ae91d385f8829ed9e423ddb64671865857a5",
+    "Frozen_V233_Resolved_Audit40.csv": "b145a2b802a1af1db70eb3b313b6daec75a1a1cac660e6a13ae6fe05cbeee87a",
+    "Frozen_Resolution_Audit_Integrity.json": "3ed0e7f2a4bee9413161191b6f15c0dd8851a9885da38ad51df7d22fd2dfbbb8",
+    "Frozen_V233_Main20.csv": "225c388c0775b46c3f43bba5222ec28fc0760a12003db7b2f900c6393edcc8d5"
+  },
+  "audit_module_sha256": "9de572e2bed0114241cc9b9e11a45e91caf4f34f124f0589e1908d920ae793f2",
+  "baseline_trace_provenance": {
+    "rad_0": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_rad_seed000/diagnostics/rad_nf500_seed0/sampler_coverage_by_refresh.csv",
+      "sha256": "a1582a86ca302e07904fc15728ace8610666a4f1bb2c3ff1bbefc4ee1650d494"
+    },
+    "rad_1": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_rad_seed001/diagnostics/rad_nf500_seed1/sampler_coverage_by_refresh.csv",
+      "sha256": "6ad96dfb2c6d29b3d17b714af8d70d1abc2cb976ee4043a732a8f6eb43fdda27"
+    },
+    "rad_2": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_rad_seed002/diagnostics/rad_nf500_seed2/sampler_coverage_by_refresh.csv",
+      "sha256": "1052761ee8ceda8d521a644eb173634c1218a8f374dfa4a3e564480a2c820a17"
+    },
+    "rad_3": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_rad_seed003/diagnostics/rad_nf500_seed3/sampler_coverage_by_refresh.csv",
+      "sha256": "33780acb3b30d1732c2517d56e9a361f15d9a031fee137f5ba1ab998005b006a"
+    },
+    "rad_4": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_rad_seed004/diagnostics/rad_nf500_seed4/sampler_coverage_by_refresh.csv",
+      "sha256": "77736bb905e3a271ca7fdab543ff304683ac043f9d8ca9f812592199ade71e95"
+    },
+    "alhs_0": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_alhs_seed000/diagnostics/alhs_nf500_seed0/sampler_coverage_by_refresh.csv",
+      "sha256": "27a6998036d8a7735e88a1f3a2e493eb2e6f18355292ada06299615975494e12"
+    },
+    "alhs_1": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_alhs_seed001/diagnostics/alhs_nf500_seed1/sampler_coverage_by_refresh.csv",
+      "sha256": "e13bd4e9a74a61fe308e02262910e0d3d1be146c03b5c944b12cd5c732cca9a9"
+    },
+    "alhs_2": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_alhs_seed002/diagnostics/alhs_nf500_seed2/sampler_coverage_by_refresh.csv",
+      "sha256": "93c5b03532790c6a31da03f55b23bfe184aa8cbbdeff52d3c0b4c92a944be357"
+    },
+    "alhs_3": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_alhs_seed003/diagnostics/alhs_nf500_seed3/sampler_coverage_by_refresh.csv",
+      "sha256": "8f28f8b4570dd92b1ea6fe358c40284165cc2730f539c33543b10d918dc627e9"
+    },
+    "alhs_4": {
+      "archive_member": "pde_v233_outputs/main_pilot/runs/hard_both_bl_uniform_alhs_seed004/diagnostics/alhs_nf500_seed4/sampler_coverage_by_refresh.csv",
+      "sha256": "ccbffc5f8e0bb97cde6a85e2dc536003b7d579f5588bfce46856d5d7056412fa"
+    }
+  },
+  "new_training_results_in_package": false
+}

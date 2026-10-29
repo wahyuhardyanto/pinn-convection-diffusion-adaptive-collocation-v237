@@ -1,0 +1,8 @@
+{
+  "solver": "Backward Euler + Scharfetter-Gummel flux",
+  "signature": "b6166809a647",
+  "elapsed_s": 1.77205775,
+  "reference_only": true,
+  "operator": "J=c*u-D*u_x",
+  "version": "sg-bernoulli-be-1.0"
+}

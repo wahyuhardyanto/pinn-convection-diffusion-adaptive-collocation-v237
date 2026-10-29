@@ -1,0 +1,15 @@
+{
+  "verification": "secondary_reference_not_exact_solution",
+  "fdm_primary_unchanged": true,
+  "cell_peclet": 0.5,
+  "grid_nx": 2001,
+  "snapshot_count": 21,
+  "relative_l2_sg_minus_fdm": 0.0005130218646426952,
+  "max_absolute_sg_minus_fdm": 0.007904620543348728,
+  "outflow_x_ge_099_rmse": 0.0022868121329777755,
+  "sg_min": 0.0,
+  "sg_max": 1.0,
+  "fdm_min": 0.0,
+  "fdm_max": 1.0,
+  "warning": "Agreement of SG and FDM on the same mesh is not a grid-convergence proof."
+}

@@ -1,0 +1,106 @@
+{
+  "pilot_version": "2.3.3",
+  "preset": "pilot",
+  "formulation": "main",
+  "pde_config": {
+    "c": 1.0,
+    "D": 0.001,
+    "x_range": [
+      0.0,
+      1.0
+    ],
+    "t_range": [
+      0.0,
+      1.0
+    ],
+    "layers": [
+      2,
+      64,
+      64,
+      64,
+      1
+    ],
+    "w_res": 10.0,
+    "w_ic": 20.0,
+    "w_bc": 20.0,
+    "n_ic": 500,
+    "n_bc": 500,
+    "warmup_epochs": 100,
+    "main_epochs": 4900,
+    "physics_ramp_epochs": 900,
+    "adam_lr": 0.001,
+    "resample_every": 250,
+    "validation_every": 250,
+    "val_grid_side": 31,
+    "lbfgs_max_iter": 300,
+    "lbfgs_union_sets": 4,
+    "adapt_grid_side": 51,
+    "adapt_eval_chunk": 512,
+    "eta": 0.1,
+    "reference_nx": 2001,
+    "reference_nt": 50001,
+    "reference_snapshots": 21,
+    "n_collocation": [
+      500
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "methods": [
+      "mc"
+    ],
+    "diagnostics_every": 100,
+    "evaluation_chunk": 1024,
+    "pde": "u_t+c*u_x-D*u_xx=0",
+    "warmup_bc_weight": 20.0,
+    "boundary_validation_times": 401,
+    "checkpoint_bc_max_tol": 0.02,
+    "constraint_mode": "hard_ic_soft_bc",
+    "enrichment_fraction": 0.25,
+    "enrich_dmin_factor": 0.01,
+    "enrich_dmax_factor": 20.0,
+    "bl_delta_factor": 1.0,
+    "purpose": "V2.3.3 paired five-seed four-sampler pilot",
+    "transition_epochs": 900,
+    "joint_epochs": 4000,
+    "curriculum": "v31_staged",
+    "independent_residual_points": 4096,
+    "independent_residual_seed": 1234567,
+    "validation_fdm_policy": "fdm_from_v2_unchanged"
+  },
+  "runtime": {
+    "python": "3.9.16",
+    "torch": "2.8.0",
+    "numpy": "1.25.2",
+    "pandas": "2.0.2",
+    "scipy": "1.10.1",
+    "system": "macOS-15.7.9-arm64-arm-64bit",
+    "machine": "arm64",
+    "device": "mps",
+    "dtype": "float32"
+  },
+  "source_sha256": {
+    "v233": "20d64e0f3f18e9a939e9dedaaa3a2101a9f7a401331262356588428d8a0d3c54",
+    "v232": "1160c8a49e003630c06730de9c086924bd4f17ac93d82fa4b60336c711160df9",
+    "v231": "d154ef2fc148aa996519558a22430888f12796df1f4a6481b8e7bc62cb17fd62",
+    "v23": "c7781f139435ff467166b8f43de3d0570f1c968be0923d99e6874de80c904783",
+    "v22": "53c200b71fe9dbc9a08a63f375fecc4bb784f4aa9bdac7897ce8e415c4fe9950",
+    "v21": "4882a3ca1bf15c4850a055213d57bf5b0adb5f5f5ac529679e3ee87228843104",
+    "v2": "46abcbbdea1e684bd7943cabaac682fac952a39c373a272ce151183e8b97403e"
+  },
+  "frozen_sources_sha256": {
+    "main": "9b6ef81fc2fd7fdd7159dc23ff7b9aae707511ee7d7cdcab2627c7c9128af07f",
+    "sensitivity": "321798be768d9c113a13c5a3ccc4aa72f05e8d5f9213fafce068924924c95066"
+  },
+  "frozen_mc_reuse": true,
+  "diagnostic_grid": {
+    "nx": 181,
+    "nt": 61
+  },
+  "checkpoint_policy": "bc_feasible",
+  "note": "One common training protocol and Nf, 5 paired seeds; method-dependent adaptive trajectories."
+}

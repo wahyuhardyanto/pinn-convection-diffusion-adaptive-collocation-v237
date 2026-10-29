@@ -1,0 +1,58 @@
+{
+  "version": "2.3.7-unified-four-sampler1",
+  "tested_environment": {
+    "device": "cpu",
+    "note": "Functional smoke only; production MPS not run here"
+  },
+  "smoke_runs_completed": 4,
+  "methods": [
+    "alhs",
+    "lhs",
+    "mc",
+    "rad"
+  ],
+  "shared_prefix_unique_hash_counts": {
+    "shared_checkpoint_sha256": 1,
+    "shared_model_sha256": 1,
+    "transition_optimizer_sha256": 1,
+    "transition_rng_sha256": 1,
+    "transition_points_sha256": 1
+  },
+  "shared_prefix_all_exact": true,
+  "uniform_weight_checks": {
+    "mc": {
+      "q_min": 1.0,
+      "q_max": 1.0,
+      "weight_min": 1.0,
+      "weight_max": 1.0
+    },
+    "lhs": {
+      "q_min": 1.0,
+      "q_max": 1.0,
+      "weight_min": 1.0,
+      "weight_max": 1.0
+    },
+    "rad": {
+      "q_min": 0.14133123245063098,
+      "q_max": 2.0594571380829265,
+      "weight_min": 0.4855648517797576,
+      "weight_max": 7.075576874696217
+    },
+    "alhs": {
+      "q_min": 0.11151609319082496,
+      "q_max": 2.3447236067464368,
+      "weight_min": 0.426489500563186,
+      "weight_max": 8.967315580979083
+    }
+  },
+  "integrity": {
+    "version": "2.3.7-unified-four-sampler1",
+    "stage": "smoke",
+    "expected": 4,
+    "completed": 4,
+    "complete": true,
+    "missing": [],
+    "scope": "unified four-sampler pilot; descriptive until confirmatory seed count is chosen"
+  },
+  "research_accuracy_claim": false
+}

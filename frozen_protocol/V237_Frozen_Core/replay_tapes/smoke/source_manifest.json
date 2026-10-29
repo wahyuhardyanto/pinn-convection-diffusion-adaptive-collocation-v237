@@ -1,0 +1,124 @@
+{
+  "version": "2.3.4",
+  "preset": "smoke",
+  "pde_config": {
+    "c": 1.0,
+    "D": 0.001,
+    "x_range": [
+      0.0,
+      1.0
+    ],
+    "t_range": [
+      0.0,
+      1.0
+    ],
+    "layers": [
+      2,
+      64,
+      64,
+      64,
+      1
+    ],
+    "w_res": 10.0,
+    "w_ic": 20.0,
+    "w_bc": 20.0,
+    "n_ic": 32,
+    "n_bc": 32,
+    "warmup_epochs": 8,
+    "main_epochs": 30,
+    "physics_ramp_epochs": 12,
+    "adam_lr": 0.001,
+    "resample_every": 5,
+    "validation_every": 5,
+    "val_grid_side": 11,
+    "lbfgs_max_iter": 3,
+    "lbfgs_union_sets": 4,
+    "adapt_grid_side": 101,
+    "adapt_eval_chunk": 512,
+    "eta": 0.1,
+    "reference_nx": 201,
+    "reference_nt": 801,
+    "reference_snapshots": 11,
+    "n_collocation": [
+      48
+    ],
+    "seeds": [
+      0
+    ],
+    "methods": [
+      "mc"
+    ],
+    "diagnostics_every": 5,
+    "evaluation_chunk": 1024,
+    "pde": "u_t+c*u_x-D*u_xx=0",
+    "warmup_bc_weight": 20.0,
+    "boundary_validation_times": 201,
+    "checkpoint_bc_max_tol": 0.02,
+    "constraint_mode": "hard_ic_soft_bc",
+    "enrichment_fraction": 0.25,
+    "enrich_dmin_factor": 0.01,
+    "enrich_dmax_factor": 20.0,
+    "bl_delta_factor": 1.0,
+    "purpose": "V2.3.3 paired five-seed four-sampler pilot",
+    "transition_epochs": 12,
+    "joint_epochs": 18,
+    "curriculum": "v31_staged",
+    "independent_residual_points": 128,
+    "independent_residual_seed": 1234567,
+    "validation_fdm_policy": "fdm_from_v2_unchanged"
+  },
+  "runtime": {
+    "python": "3.9.16",
+    "torch": "2.8.0",
+    "numpy": "1.25.2",
+    "pandas": "2.0.2",
+    "scipy": "1.10.1",
+    "system": "macOS-15.7.9-arm64-arm-64bit",
+    "machine": "arm64",
+    "device": "mps",
+    "dtype": "float32"
+  },
+  "torch_threads": 8,
+  "proposal_profile": "graded101",
+  "proposal_only_ablation": true,
+  "checkpoint_rule": "V233 old grid31 + bc_feasible unchanged",
+  "baseline_archive_sha256": "056adfc0f3c38dc40e3530ad4b98159bf8add3e3309a37a94adafd2c80e43805",
+  "source_sha256": {
+    "nonuniform_proposal_v234.py": "3bbbe5147519a988395bb6f67b1bcff5618d9abffcf1b1a00968b8b4dbf06853",
+    "convection_diffusion_proposal_v234.py": "79695152f90e6758c20c08997a5e15ae9d10a62a6d14bd243179e24a59c44086",
+    "convection_diffusion_pilot_v233.py": "20d64e0f3f18e9a939e9dedaaa3a2101a9f7a401331262356588428d8a0d3c54",
+    "audit_resolution_v233.py": "9de572e2bed0114241cc9b9e11a45e91caf4f34f124f0589e1908d920ae793f2",
+    "convection_diffusion_validation_v231.py": "d154ef2fc148aa996519558a22430888f12796df1f4a6481b8e7bc62cb17fd62",
+    "verify_convection_diffusion_v234.py": "ee59241137b6dd515e10b01713942c41bbccba00ca51919953d85fa1eb777826",
+    "convection_diffusion_benchmark_v22.py": "53c200b71fe9dbc9a08a63f375fecc4bb784f4aa9bdac7897ce8e415c4fe9950",
+    "convection_diffusion_benchmark_v23.py": "c7781f139435ff467166b8f43de3d0570f1c968be0923d99e6874de80c904783",
+    "convection_diffusion_benchmark_v2.py": "46abcbbdea1e684bd7943cabaac682fac952a39c373a272ce151183e8b97403e",
+    "convection_diffusion_ablation_v232.py": "1160c8a49e003630c06730de9c086924bd4f17ac93d82fa4b60336c711160df9",
+    "convection_diffusion_benchmark_v21.py": "4882a3ca1bf15c4850a055213d57bf5b0adb5f5f5ac529679e3ee87228843104"
+  },
+  "environment_comparison": {},
+  "environment_matched": true,
+  "posthoc_only_quadrature": {
+    "smoke_orders": [
+      4,
+      6
+    ],
+    "ablation_orders": [
+      6,
+      8
+    ],
+    "escalate_to": 12,
+    "J_tolerance": 0.001
+  },
+  "extra_observers": "No RNG/no new network eval in training; histories and existing state copies retained; disk writes after training",
+  "all_expected_tasks": [
+    [
+      "rad",
+      0
+    ],
+    [
+      "alhs",
+      0
+    ]
+  ]
+}
