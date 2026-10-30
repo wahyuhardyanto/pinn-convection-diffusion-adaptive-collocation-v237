@@ -1,9 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this software or its reproducibility materials, please cite this repository. Please also cite the associated article once it is published."
+message: "If you use this software or its reproducibility materials, please cite this archived V2.3.7 release. Please also cite the associated article once it is published."
 title: "PINN Convection-Diffusion V2.3.7: Frozen Four-Sampler Benchmark"
 type: software
 version: "2.3.7"
-date-released: 2026-10-22
+date-released: 2026-10-30
+doi: "10.5281/zenodo.23794781"
+license: MIT
 authors:
   - family-names: "Hardyanto"
     given-names: "Wahyu"
@@ -18,7 +20,7 @@ authors:
     given-names: "Listiyanto"
     affiliation: "Universitas Negeri Semarang, Semarang, Indonesia"
 repository-code: "https://github.com/wahyuhardyanto/pinn-convection-diffusion-adaptive-collocation-v237"
-url: "https://github.com/wahyuhardyanto/pinn-convection-diffusion-adaptive-collocation-v237"
+url: "https://doi.org/10.5281/zenodo.23794781"
 abstract: >-
   Frozen reproducibility package for a transient one-dimensional convection-diffusion
   physics-informed neural network benchmark comparing MC-R, LHS-R, RAD-IID, and
