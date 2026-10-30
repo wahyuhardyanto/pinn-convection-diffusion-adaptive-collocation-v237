@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or its reproducibility materials, please cite this repository. Please also cite the associated article once it is published."
+title: "PINN Convection-Diffusion V2.3.7: Frozen Four-Sampler Benchmark"
+type: software
+version: "2.3.7"
+date-released: 2026-10-22
+authors:
+  - family-names: "Hardyanto"
+    given-names: "Wahyu"
+    affiliation: "Universitas Negeri Semarang, Semarang, Indonesia"
+  - family-names: "Saefan"
+    given-names: "Joko"
+    affiliation: "Universitas PGRI Semarang, Semarang, Indonesia"
+  - family-names: "Wahyuni"
+    given-names: "Siti"
+    affiliation: "Universitas Negeri Semarang, Semarang, Indonesia"
+  - family-names: "Listiyanto"
+    given-names: "Listiyanto"
+    affiliation: "Universitas Negeri Semarang, Semarang, Indonesia"
+repository-code: "https://github.com/wahyuhardyanto/pinn-convection-diffusion-adaptive-collocation-v237"
+url: "https://github.com/wahyuhardyanto/pinn-convection-diffusion-adaptive-collocation-v237"
+abstract: >-
+  Frozen reproducibility package for a transient one-dimensional convection-diffusion
+  physics-informed neural network benchmark comparing MC-R, LHS-R, RAD-IID, and
+  ALHS-R collocation strategies under a common physical-uniform residual objective,
+  shared optimization prefixes, and a pre-specified statistical analysis plan.
+keywords:
+  - "physics-informed neural networks"
+  - "convection-diffusion"
+  - "adaptive collocation"
+  - "importance sampling"
+  - "Latin hypercube sampling"
+  - "computational mechanics"
