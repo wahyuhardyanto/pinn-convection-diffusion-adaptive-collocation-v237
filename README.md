@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23794781.svg)](https://doi.org/10.5281/zenodo.23794781)
+
 # PINN Convection-Diffusion V2.3.7: Frozen Four-Sampler Benchmark
 
 
@@ -291,15 +293,15 @@ Repository-level documentation, citation metadata, archival links, and CI config
 The repository includes a GitHub Actions workflow that runs the static hash verification on repository updates. Its current status can be checked from the repository **Actions** tab.
 
 ---
-
 ## Citation
 
-Formal citation metadata will be provided in `CITATION.cff` when the final author list and archival DOI are fixed. Until then, please cite the repository by its URL and version:
+The frozen V2.3.7 reproducibility release is permanently archived on Zenodo:
 
-> PINN Convection-Diffusion V2.3.7: Frozen Four-Sampler Benchmark. Version 2.3.7.  
-> https://github.com/wahyuhardyanto/pinn-convection-diffusion-adaptive-collocation-v237
+**DOI:** `10.5281/zenodo.23794781`
 
-A versioned archival DOI should be used once the repository release is deposited and registered.
+Please cite the archived version when reproducibility of the reported benchmark is required. Citation metadata are provided in [`CITATION.cff`](CITATION.cff).
+
+The associated journal article should also be cited once it is published.
 
 ---
 
