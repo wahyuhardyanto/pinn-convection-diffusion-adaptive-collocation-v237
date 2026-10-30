@@ -305,9 +305,14 @@ A versioned archival DOI should be used once the repository release is deposited
 
 ## License
 
-A final reuse license has not yet been assigned. See [`LICENSE_NOTICE.md`](LICENSE_NOTICE.md).
+This repository uses separate licenses for software and non-software research materials.
 
-No software or data license should be inferred from repository availability alone. The license will be finalized before the archival public release.
+- **Software and source code:** MIT License. See [`LICENSE`](LICENSE).
+- **Project-authored data, numerical results, and documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0). See [`LICENSE_DATA_DOCUMENTATION.md`](LICENSE_DATA_DOCUMENTATION.md).
+
+Third-party materials, external datasets, and submitted or published journal materials remain subject to their own applicable terms and are not relicensed by this repository.
+
+Reuse of the scientific code or data does not imply that a modified implementation represents the frozen V2.3.7 benchmark. Modified versions should be clearly identified as such.
 
 ---
 
