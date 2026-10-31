@@ -1,7 +1,6 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23794781.svg)](https://doi.org/10.5281/zenodo.23794781)
-
 # PINN Convection-Diffusion V2.3.7: Frozen Four-Sampler Benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23794781.svg)](https://doi.org/10.5281/zenodo.23794781)
 
 Reproducibility repository for a **transient 1D convection-diffusion physics-informed neural network (PINN) benchmark** comparing four collocation strategies under a frozen and controlled protocol:
 
